@@ -1,5 +1,5 @@
 import React ,{Component} from 'react' 
-import { View, Text,Image} from 'react-native'
+import { View, Text,Image, SafeAreaView} from 'react-native'
 import styles from './styles';
 
 class Movies extends Component{
@@ -10,9 +10,7 @@ class Movies extends Component{
         const {movie} = this.props
          const uri =  "http://image.tmdb.org/t/p/w500" + movie.poster_path
         return(
-            <View style= {styles.container}>
-            {/* <Text style={styles.titleOne}>{"Movie"}</Text> */}
-       
+            <SafeAreaView style= {styles.container}>
              <Image source={{uri : uri}}
              style= {{width: 200, height: 330, alignItems: 'center'}} />  
              
@@ -22,7 +20,7 @@ class Movies extends Component{
             <Text style={styles.overviewTitle}>{"Sinopsis"}</Text>
             <Text style={styles.overview}>{movie.overview}</Text>
           
-            </View>
+            </SafeAreaView>
         );
     }
 }

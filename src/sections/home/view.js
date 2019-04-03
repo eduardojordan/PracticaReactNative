@@ -4,7 +4,7 @@ import styles from "./styles"
 import { Actions } from 'react-native-router-flux'
 import * as api from '../../webservices'
 import { MovieCell } from '../../widgets'
-import * as Colors from '../../commons/colors'
+import * as colors from '../../commons/colors'
 
 // import { YellowBox } from 'react-native';
 // YellowBox.ignoreWarnings(['Remote debugger']);
@@ -18,7 +18,10 @@ class Home extends Component{
     }
  
     _onMovieTapped = movie => {
-         Actions.Movies({movie, title: movie.title})
+        const titlex = movie.title
+        const onRight = _ => 
+        Actions.MoviesNote({movie: movie , title: "Add note in " + titlex})
+         Actions.Movies({ movie, title:titlex , onRight })
     }
 
     _KeyExtractor = (item, index) => `${item.id}`
@@ -31,7 +34,7 @@ class Home extends Component{
         return null 
     }
         return(
-        <ActivityIndicator color={Colors.white} style={{margin: 20 }}/>
+        <ActivityIndicator color={colors.white} style={{margin: 20 }}/>
         )
     } 
  
@@ -60,8 +63,8 @@ class Home extends Component{
           <RefreshControl 
             onRefresh={this.props.getMoviesList}
             refreshing={isFetching}
-            tintColor={Colors.yellow}
-            colors= {[Colors.yellow]}
+            tintColor={colors.yellow}
+            colors= {[colors.yellow]}
             />
           }
           />
