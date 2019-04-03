@@ -8,13 +8,13 @@ class Movies extends Component{
     }
     render(){
         const {movie} = this.props
-        // const uri =  "http://image.tmdb.org/t/p/w500" + movie.poster_path
+         const uri =  "http://image.tmdb.org/t/p/w500" + movie.poster_path
         return(
             <View style= {styles.container}>
-            <Text style={styles.titleOne}>{"Movie"}</Text>
-            {/* <Image source ={} style={styles.image}/> */}
-            {/* <Image source={uri: 'https://facebook.github.io/react/logo-og.png'}
-       style={{width: 100, height: 100}} />  */}
+            {/* <Text style={styles.titleOne}>{"Movie"}</Text> */}
+       
+             <Image source={{uri : uri}}
+             style= {{width: 140, height: 230, alignItems: 'center'}} />  
             <Text style={styles.title}>{movie.title}</Text>
             <Text style={styles.releaseTitle}>{"Release Date"}</Text>
             <Text style={styles.release}>{movie.release_date}</Text>

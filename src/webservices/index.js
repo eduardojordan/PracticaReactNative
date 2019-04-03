@@ -24,3 +24,8 @@ export function fetchMovies(){
 //        })
 //    })
 }
+
+export function fetchDetailByMovie(){
+    const url = `/movies?`
+    return  axios.get(url)
+}

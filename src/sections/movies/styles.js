@@ -12,12 +12,16 @@ export default StyleSheet.create({
        
         
     },
-    image:{
-        width: '20',
-        height: '20'
-        // resizeMode:"cover"
+    // image:{
+    //     // width: '20',
+    //     // height: '20'
+    //     // // resizeMode:"cover"
+    //     width: '140',
+    //     height: '220 ',
+    //     //alignItems: 'center',
+    //     // justifyContent: 'center'
 
-    },
+    // },
     titleOne:{
         color: colors.yellow,
   fontSize: 14,

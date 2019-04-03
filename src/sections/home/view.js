@@ -56,7 +56,6 @@ class Home extends Component{
           renderItem = {this._renderItem}
           numColumns={2}
           ListEmptyComponent={_ => this._renderNoResultsText(isFetching)}
-          //ListFooterComponent={_ => this._renderFetching(isFetching)}
           refreshControl={
           <RefreshControl 
             onRefresh={this.props.getMoviesList}
