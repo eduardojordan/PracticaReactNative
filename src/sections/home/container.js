@@ -5,7 +5,7 @@ import * as MoviesActions from "../../redux/movies/actions"
 const mapStateToProps = state => {
     console.log("mapsStateToProps state:", state)
     return{
-        movieslist: state.movies.list,
+        moviesList: state.movies.list,
         isFetching: state.movies.isFetching
     }
 }
