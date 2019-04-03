@@ -14,7 +14,8 @@ class Movies extends Component{
             {/* <Text style={styles.titleOne}>{"Movie"}</Text> */}
        
              <Image source={{uri : uri}}
-             style= {{width: 140, height: 230, alignItems: 'center'}} />  
+             style= {{width: 200, height: 330, alignItems: 'center'}} />  
+             
             <Text style={styles.title}>{movie.title}</Text>
             <Text style={styles.releaseTitle}>{"Release Date"}</Text>
             <Text style={styles.release}>{movie.release_date}</Text>

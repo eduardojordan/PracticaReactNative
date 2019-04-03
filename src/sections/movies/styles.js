@@ -3,25 +3,15 @@ import * as colors from '../../commons/colors'
 
 export default StyleSheet.create({
     container: {
+      justifyContent: 'center',
+      alignItems: 'center',
         flex: 1,
         backgroundColor: colors.main,
-        paddingTop: 20
-        // color: colors.white,
-        // fontSize:"16",
-        // margin:"10"
+        paddingTop: 10
+        
        
         
     },
-    // image:{
-    //     // width: '20',
-    //     // height: '20'
-    //     // // resizeMode:"cover"
-    //     width: '140',
-    //     height: '220 ',
-    //     //alignItems: 'center',
-    //     // justifyContent: 'center'
-
-    // },
     titleOne:{
         color: colors.yellow,
   fontSize: 14,
