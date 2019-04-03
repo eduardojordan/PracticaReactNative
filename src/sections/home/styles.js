@@ -12,9 +12,10 @@ container: {
 list: { paddingTop: 20 },
 noResults: {
   color: colors.white,
-  fontSize: 16,
+  fontSize: 18,
   margin: 10,
-  textAlign: "center"
+  textAlign: "center",
+  paddingTop: 40
 }
 
 });

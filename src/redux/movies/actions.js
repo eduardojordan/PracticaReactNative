@@ -10,14 +10,19 @@ function updateMoviesList(list, total){
     }
 }
 
+function updateFetching(value){
+    return{
+        type: types.MOVIES_UPDATE_FETCHING,
+        value
+    }
+}
+
 export function fetchMoviesList() {
- console.log("FUERA DE THUNK")
     return function(dispatch, getState) {
-        console.log("DENTRO DE THUNK")
+     dispatch(updateFetching(true))
         api
         .fetchMovies()
         .then( res => {
-            console.log("RESPUESTA DE API",res)
             const list = res.data.results ;
             const total = res.data.total_pages;
             dispatch(updateMoviesList(list, total))
@@ -26,6 +31,7 @@ export function fetchMoviesList() {
             console.error("fetchMovies err:", err)
            
         })
+       .finally(() => dispatch(updateFetching(false)))
 
     }
 }
