@@ -13,9 +13,11 @@ import { placeholder } from "@babel/types";
                 onChangeText={onChangeText}
                 value={value}
                 keyboardType={keyboardType}
+                multiline={true}
                 placeholder={placeholder}
                 placeholderTextColor={placeholderTextColor}
                 underlineColorAndroid = {"transparent"} // Evita la barra en Android
+                
                 />
                 {error ? <Text style={[styles.error, errorStyle]}>{error}</Text> : null }
              </View>

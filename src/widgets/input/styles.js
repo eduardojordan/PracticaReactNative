@@ -19,7 +19,8 @@ export default StyleSheet.create({
         borderRadius: 4, 
         borderColor: colors.yellow, 
         paddingVertical: 4, 
-        paddingVertical: 150
+        paddingVertical: 150,
+        
 
     },
     error:{
