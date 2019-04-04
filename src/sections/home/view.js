@@ -6,8 +6,8 @@ import * as api from '../../webservices'
 import { MovieCell } from '../../widgets'
 import * as colors from '../../commons/colors'
 
-// import { YellowBox } from 'react-native';
-// YellowBox.ignoreWarnings(['Remote debugger']);
+ import { YellowBox } from 'react-native';
+ YellowBox.ignoreWarnings(['Remote debugger']);
 
 
 class Home extends Component{
@@ -20,7 +20,7 @@ class Home extends Component{
     _onMovieTapped = movie => {
         const titlex = movie.title
         const onRight = _ => 
-        Actions.MoviesNote({movie: movie , title: "Add note in " + titlex})
+        Actions.MoviesNote({movie: movie , title: "Note " + titlex})
          Actions.Movies({ movie, title:titlex , onRight })
     }
 
