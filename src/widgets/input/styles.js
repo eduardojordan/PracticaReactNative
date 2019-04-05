@@ -4,7 +4,7 @@ import  * as colors from '../../commons/colors'
 export default StyleSheet.create({
     container:{ 
         paddingHorizontal: 20, 
-        paddingVertical: 30
+        paddingVertical: 20
 
     },
     label:{ 
@@ -19,7 +19,7 @@ export default StyleSheet.create({
         borderRadius: 4, 
         borderColor: colors.yellow, 
         paddingVertical: 4, 
-        paddingVertical: 150,
+        paddingVertical: 100,
         
 
     },
